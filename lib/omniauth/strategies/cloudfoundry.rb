@@ -96,6 +96,9 @@ module OmniAuth
       end
 
       def callback_url
+        p "full_host: #{full_host}"
+        p "script_name: #{script_name}"
+        p "callback_path: #{callback_path}"
         full_host + script_name + callback_path
       end
 
